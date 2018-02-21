@@ -1,0 +1,2059 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================ CUSTOM CODE ================ */ 
+/* ================ General ================ */ 
+
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    font-weight: 200;
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    font-size: 2.25em;
+    /*    36px*/
+}
+
+h2 {
+    font-size: 1.25em;
+    /*    20px*/
+}
+
+h3 {
+    font-size: 1em;
+    /*    16px*/
+}
+
+h4 {
+    font-size: .875em;
+    /*    14px*/
+}
+
+h5 {
+    font-size: .75em;
+    /*    12px*/
+}
+
+footer {
+    background: #f0c26a;
+    color: white;
+    padding: 1.5vw 0 6vw 3vw;
+}
+
+footer h3 {
+    float: left;
+    line-height: 2vw;
+}
+
+footer div {
+    max-width: 15em;
+    float: right;
+}
+
+footer p {
+    float: right;
+    padding: 0.75vw 3vw 0 0;
+    font-size: 0.6em;
+}
+
+footer img {
+    float: right;
+    padding-left: 1.5vw;
+    padding-top: 0.5vw;
+    width: 1.5vw;
+    height: auto;
+}
+
+footer img:nth-of-type(1) {
+    padding-right: 3vw;
+    
+}
+
+/* ================ Header (nav) ================ */ 
+
+header {
+    padding-bottom: 3em;
+}
+
+header img.logo {
+    float: left;
+    padding-left: 3em;
+    width: 6vw;
+    height: auto;
+    position: relative;
+    top: 1.5vw;
+}
+
+header img.cart {
+    float: right;
+    width: 2vw;
+    height: auto;
+    position: absolute;
+    top: 5.5vw;
+    right: 5vw;
+}
+
+nav {
+    padding-top: 4em;
+    float: left;
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-left: 4em;
+    position: relative;
+    padding-bottom: 0;
+    transition: .2s linear all;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover{
+    color: #f0c26a !important;
+}
+
+/*nav ul li a:active {*/
+/*    color: #f0c26a !important;*/
+/*}*/
+
+nav ul li ul {
+    height: 0;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    z-index: 10;
+    transition: .2s linear height;
+    overflow: hidden;
+    width: 600%;
+}
+
+nav ul li.special:hover {
+    padding-bottom: 8em;
+}
+
+nav ul li:hover ul {
+    height: 8em;
+    background: rgba(255,255,255,0.7);
+}
+
+nav ul li ul li {
+    display: inline-block;
+    padding-left: 2em;
+}
+
+nav ul li ul li:nth-of-type(1) {
+    padding-left: 4em;
+}
+
+nav ul li ul li img {
+    width: 8vw;
+    height: auto;
+    display: block;
+}
+
+
+nav ul li ul li a p {
+    font-size: .75em;
+    padding-top: 1vw;
+}
+
+
+
+/* ================ Home page ================ */ 
+
+body.home h1,
+body.home h2,
+body.home h3 {
+    color: white;
+}
+
+body.home h4,
+body.home h5 {
+    color: grey;
+}
+
+body.home figure.large h3,
+figure.twothird h3 {
+    color: grey;
+}
+
+body.home figure img {
+    width: 29.33vw;
+    height: auto;
+}
+
+body.home figure.large img {
+    width: 100vw;
+    height: auto;
+}
+
+body.home figure.twothird img {
+    width: 62.66vw;
+    height: auto;
+}
+
+body.home figure.small {
+    padding-left: 4vw; /* or 2.7em */
+    float: right;
+    padding-bottom: 3.3vw;
+}
+body.home figure.small .imageholder{
+    width: 29.33vw;
+    height: 23.3522666669vw;
+    overflow: hidden;
+}
+
+body.home figure.tall .imageholder {
+    width: 29.33vw;
+    height: 52.69825vw;
+    overflow: hidden;
+}
+
+body.home figure.twothird .imageholder {
+    width: 62.66vw;
+    height:29.3523588vw;
+    overflow: hidden;
+}
+
+body.home figure img:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+body.home figure.large img:hover {
+    transform: none;
+}
+
+body.home figure {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+body.home figure.large {
+    position: relative;
+}
+
+body.home figure:nth-of-type(7) {
+    padding-left: 2vw;
+}
+
+body.home figcaption.item {
+    position: relative;
+    padding-left: 2vw;
+    margin-top: -4.6vw;
+}
+
+body.home figcaption.large {
+    position: relative;
+    padding-left: 2vw;
+    bottom: 7vw;
+}
+
+body.home figcaption.event {
+    padding-top: .4vw;
+}
+
+body.home figure.twothird figcaption {
+    bottom: 3.5vw;
+}
+
+body.home main section {
+    margin: 2vw;
+}
+
+body.home figure.large h1 {
+    padding: 1.3vw 0;
+}
+
+body.home figcaption.item h2 {
+    padding: 1vw 0;
+}
+
+body.home figure.twothird h1 {
+    padding-bottom: 2vw;
+}
+
+/*figcaption {*/
+/*    background: rgba(255,0,40,0.4) !important;*/
+
+/*}*/
+
+/* ================ About page ================ */ 
+
+.about figure {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    margin: 0vh 0vw 10vh 0vw;
+}
+
+.about .first-img img {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 1vw;
+}
+
+.about .second-img img {
+    width: 92vw;
+    height: auto;
+    padding-left: 5vw;
+    padding-bottom: 1vw;
+}
+
+.about .third-img img {
+    float: right;
+    width: 50vw;
+    height: auto;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+}
+
+.about .fourth-img img {
+    float: left;
+    width: 35vw;
+    height: auto; 
+    padding-left: 5vw;
+    margin-right: 3vw;
+    padding-bottom: 1vw;
+}
+
+.about .first-caption {
+    padding-left: 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .first-caption h4 {
+    max-width: 25em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .second-caption {
+    padding-left: 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .second-caption h4 {
+    max-width: 23em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .third-caption {
+    position: absolute;
+    padding: 31% 0 0 23%;
+}
+
+.about .third-caption h4 {
+    max-width: 18em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .fourth-caption {
+    position: absolute;
+    padding: 39% 0 0 44%;
+}
+
+.about .fourth-caption h4 {
+    max-width: 20em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+
+/* ================ pens page ================ */ 
+     .pens header nav ul li.special:hover {
+    padding-bottom: 0;
+}
+
+    .pens header nav ul li:hover ul {
+    height: 0;
+    background: none;
+}
+    
+    .pens{
+        width: 100%;
+        height: auto;
+    }
+    
+    .pens section {
+        width: 15%;
+        position: absolute;
+        margin-left: 10%;
+        line-height: 3em;
+        color: #95989A;
+    }
+    
+    .pens section h2:nth-of-type(3) {
+        color: #F0C26A;
+        padding-left: 15%;
+    }
+    .pens main aside {
+        display: none;
+    }
+    
+    .pens main figure img:hover {
+        transform: scale(1.1);
+        transition: .2s ease-in-out;
+    }
+    
+    .pens main figure:nth-of-type(1){
+        position: relative;
+        margin-right: 5%;
+        padding-bottom: 5%;
+        float: right;
+    }
+    
+    .pens main figure:nth-of-type(1) img{
+        width: 68vw;
+    }
+    
+   .pens main figure:nth-of-type(1) figcaption{
+        position: relative;
+        bottom: 8vw;
+        left: -4.7vw;
+    }
+    
+    .pens main figure:nth-of-type(1) .imageholder {
+        width: 68vw;
+        height: 51.34799vw;
+        overflow: hidden;
+    }
+    
+    .pens main figure:nth-of-type(2){
+        float:left;
+        position: relative;
+        margin-left: 10%;
+    }
+    
+    
+    .pens main figure:nth-of-type(2) img{
+        width: 45vw;
+        height: auto;
+    }
+    
+    .pens main figure:nth-of-type(2) .imageholder {
+        width: 45vw;
+        height: 20.99330vw;
+        overflow: hidden;
+    }
+    
+    .pens main figure:nth-of-type(2) figcaption{
+        position: absolute;
+        margin-top: 2%; 
+        margin-bottom: 2%;
+        z-index: 10;
+     }
+    
+    
+    .pens main figure:nth-of-type(3){
+        float: right;
+        position: relative;
+        height: auto;
+        margin-right: 5%;
+    }
+    
+     
+    .pens main figure:nth-of-type(3) img{
+        width: 35vw;
+
+    }
+    
+    .pens main figure:nth-of-type(3) .imageholder {
+        width: 35vw;
+        height: 68.29149vw;
+        overflow: hidden;
+    }
+    
+    .pens main figure:nth-of-type(3) figcaption{
+         position: absolute;
+         margin-top: 2%;
+       
+    }
+    
+    .pens main figure:nth-of-type(4){
+        position: relative;
+        margin-left: 7%;
+        margin-top: 2%;
+        float: left;
+    }
+    
+     .pens main figure:nth-of-type(4) img{
+       width: 50vw;
+     }
+    
+    .pens main figure:nth-of-type(4) .imageholder {
+        width: 50vw;
+        height: 45.87053vw;
+        overflow: hidden;
+    }
+    
+    
+     .pens main figure:nth-of-type(4) figcaption{
+        position: relative;
+        margin-top: 1%;
+        margin-bottom: 20%;
+        margin-left: 5%;
+     }
+ 
+ /*====================Fountain Pens=========================*/
+ 
+ 
+    .fountainpens header nav ul li.special:hover {
+        padding-bottom: 0;
+    }
+
+    .fountainpens header nav ul li:hover ul {
+        height: 0;
+        background: none;
+    }
+
+
+    /*.fountainpens{*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*}*/
+    
+    .fountainpens section {
+        width: 15%;
+        position: absolute;
+        margin-left: 10%;
+        line-height: 3em;
+        color: #95989A;
+    }
+    
+    .fountainpens main section h3 {
+        padding-left: 15%;
+        color: #F0C26A;
+        font-weight: 200;
+    }
+    
+     .fountainpens main aside {
+         display: none;
+     }
+     
+     .fountainpens main figure img:hover {
+        transform: scale(1.1);
+        transition: .2s ease-in-out;
+    }
+    
+    .fountainpens main figure:nth-of-type(1){
+        position: relative;
+        float: right;
+        margin-right: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .fountainpens main figure:nth-of-type(1) img{
+        width: 68vw;
+    }
+    
+    .fountainpens main figure:nth-of-type(1) .imageholder {
+        width: 68vw;
+        height: 51.34799vw;
+        overflow: hidden;
+    }
+    
+    
+   .fountainpens main figure:nth-of-type(1) figcaption{
+        position: absolute;
+        top: 70%;
+        left: -8.5%;
+        color: grey;
+    }
+    
+    .fountainpens main figure:nth-of-type(1) figcaption h2{
+        padding-bottom: 5%;
+    }
+    
+    .fountainpens main figure:nth-of-type(2){
+        float: right;
+        /*position: relative;*/
+        margin-right: 5%;
+        margin-bottom: 8%;
+        /*margin-left: 4%; */
+        
+    }
+    
+    
+    .fountainpens main figure:nth-of-type(2) img{
+        width: 44vw;
+        
+    }
+    
+    .fountainpens main figure:nth-of-type(2) .imageholder {
+        width: 44vw;
+        height: 39.30052vw;
+        overflow: hidden;
+    }
+    
+    
+    .fountainpens main figure:nth-of-type(2) figcaption{
+        position: absolute;
+        margin-top: 1%; 
+        /*margin-left: 15%;*/
+        z-index: 10;
+     }
+     
+     .fountainpens main figure:nth-of-type(2) figcaption h3{
+        padding-bottom: 20%;
+    }
+     
+     .fountainpens main figure:nth-of-type(3){
+        /*position: relative;*/
+        float: left;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    
+     
+    .fountainpens main figure:nth-of-type(3) img{
+        width: 33.7vw;
+        margin-top: 10vw;
+        /*padding-right: 5vw;*/
+        /*box-sizing: border-box;*/
+        overflow-x: hidden;
+    }
+    
+    .fountainpens main figure:nth-of-type(3) .imageholder {
+        width: 32.7vw;
+        height: 71.2vw;
+        background: #a8dedc;
+        /*overflow-x: hidden;*/
+    }
+    
+    
+    .fountainpens main figure:nth-of-type(3) figcaption{
+        position: relative;
+        bottom: -1vw;
+        left: 0;
+        margin-left: 1.5%;
+        margin-bottom: 30%;
+    }
+    
+    .fountainpens main figure:nth-of-type(3) figcaption h3{
+        padding-bottom: 2.5%;
+        
+    }
+    
+    .fountainpens main figure:nth-of-type(4){
+       margin-right: 5%;
+       /*margin-left: 15%;*/
+       float: right;
+    }
+    
+    .fountainpens main figure:nth-of-type(4) img{
+       width: 44vw;
+    }
+     
+    .fountainpens main figure:nth-of-type(4) .imageholder {
+        width: 44vw;
+        height: 23.77382vw;
+        overflow: hidden;
+    }
+
+    
+    .fountainpens main figure:nth-of-type(4) figcaption{
+        position: relative;
+        margin-top: 2%; 
+        /*margin-left: 0;*/
+        /*margin-bottom: 40%;*/
+    }
+ 
+  .fountainpens main figure:nth-of-type(4) figcaption h3{
+        padding-bottom: 2%;
+    }
+ 
+    
+/*==================== Product details ======================*/
+    
+    .prodetails {
+        width: 100%;
+    }
+    
+    .prodetails main section{
+        display: none;
+    }
+    
+    .prodetails main figure:nth-of-type(1) {
+        width: 100%;
+
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption {
+        width: 17%;
+        float: left;
+        margin-left: 10%;
+        
+    }
+    
+    .prodetails main figure:nth-of-type(1) img {
+        width: 60%;
+        float: right;
+        margin-right: 5%;
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption h1 {
+        padding-top: 3%;
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption h4 {
+        line-height:1.5em;
+        padding-top: 8%;
+    }
+    
+    
+    .prodetails main figure:nth-of-type(1) aside {
+        width: 100%;
+        position: relative;
+        top: 24vw;
+        font-size: 0.7em;
+    }
+    
+
+    
+    .prodetails main figure:nth-of-type(1) aside a p {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        background: #F0C26A;
+        text-align: center;
+        margin-top: 2.5em;
+        color: white;
+    }
+    
+    
+    .prodetails main figure:nth-of-type(2) {
+        width: 100%;
+    }
+   
+   
+    .prodetails main figure:nth-of-type(2) img {
+        width: 60%;
+        margin-top: 10%;
+        margin-left: 10%;
+        float:left;
+    }
+    
+    .prodetails main figure:nth-of-type(2) figcaption {
+        width: 16%;
+        float: right;
+        margin-top: 45%;
+        margin-right: 12%;
+        line-height: 1.25em;
+        font-size: 0.9em;
+    }
+    
+    
+    .prodetails main figure:nth-of-type(3) {
+        width: 100%;
+    }
+    
+    .prodetails main figure:nth-of-type(3) figcaption {
+        width: 16%;
+        float: left;
+        margin-top: 43%;
+        margin-left: 17%;
+        line-height: 1.25em;
+        font-size: 0.9em;
+    }
+    
+    .prodetails main figure:nth-of-type(3) img {
+        width: 60%;
+        float: right;
+        margin-top: 8%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+    }
+    
+    
+    
+    
+/*==================== Shopping cart ======================*/
+    
+    .scart main {
+        width: 100%;
+    }
+    
+    .scart main aside{
+        display: none;
+    }
+    
+    .scart main figure:nth-of-type(1) {
+        width: 100%;
+        position: relative;
+    }
+    
+    
+    .scart main figure:nth-of-type(1) img {
+        width: 80%;
+    }
+    
+    .scart main figure:nth-of-type(1) figcaption {
+        width:20%;
+        position: absolute;
+        bottom: 48%;
+        left: 50%;
+        color: lightgrey;
+       
+
+        /*padding-top: 11%;*/
+        /*font-size: 0.8em;*/
+        /*line-height: 2.25em;*/
+    }
+    
+    
+    .scart main figure:nth-of-type(2) {
+        width: 100%;
+        position: relative;
+    }
+    
+    .scart main figure:nth-of-type(2) img {
+        width: 80%;
+    }
+    
+    .scart main figure:nth-of-type(2) figcaption {
+        width:20%;
+        position: absolute;
+        bottom: 48%;
+        left: 50%;
+    }
+    
+    
+    .scart main div {
+        width: 15%;
+        margin-left: 50%;
+        margin-top: 5%;
+        margin-bottom: 12%;
+
+    }
+    
+    .scart main div h3 {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        background: #F0C26A;
+        text-align: center;
+        margin-top: 2.5em;
+        color: white;
+        font-size: 0.8em;
+        
+    }
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+/*==================== Events ======================*/
+
+body.events main {
+    margin: 0 0 2vw 4vw;
+}
+
+body.events figure.small img {
+    width: 46vw;
+    height: auto;
+    float: left;
+    padding-bottom: 10vw;
+}
+
+body.events figure.large img {
+    width: 94vw;
+}
+
+body.events figure.large figcaption {
+    padding-top: 2vw;
+    max-width: 35%;
+}
+
+body.events figure.large figcaption h4 {
+    padding-top: 2vw;
+    line-height: 1.3em;
+}
+
+body.events figure.small figcaption {
+    float: right;
+    padding-right: 10%;
+    max-width: 35%;
+}
+
+body.events figure.small figcaption h4 {
+    padding-top: 2vw;
+    line-height: 1.3em;
+    
+}
+
+body.events main h2 {
+    padding: 6vw 0;
+    color: #f0c26a;
+}
+
+body.events div {
+}
+
+body.events h1,
+body.events h2,
+body.events h4 {
+    color: grey;
+}
+
+body.events #plus {
+    width: 1.5em;
+    height: 1.5em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1) !important;
+    display: block;
+    position: relative;
+    bottom: 7.8vw;
+    left: 9.5vw;
+    color: #f0c26a;
+    text-decoration: none;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+/*=================================== TABLET ================================*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+    
+    html { 
+        font-size: 2vw;
+        font-weight: 300;
+    }
+  
+/*====================== Tablet header =====================*/  
+
+    header img.logo {
+        width: 11vw;
+        height: auto;
+        position: relative;
+        top: 1.5vw;
+    }
+    
+    header img.cart {
+        width: 4vw;
+        height: auto;
+        top: 8vw;
+        right: 5vw;
+    }
+  
+  
+/*====================== Tablet home =====================*/
+
+    
+    body.home figcaption.item {
+        margin-top: -6.2vw;
+    }
+
+    body.home figcaption.large {
+        bottom: 9vw;
+    }
+    
+    body.home figure.twothird figcaption {
+        bottom: 4vw;
+    }
+ 
+ 
+}
+
+/*====================== Tablet prodetails =====================*/
+
+    .tabletclear {
+        clear: both;
+}
+
+
+/*=================================== MOBILE ================================*/
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 6vw;
+        font-weight: 300;
+    }
+    
+    footer {
+        padding: 2vh 0 8.5vh 3vw;
+    }
+
+    footer h3 {
+        line-height: 1.5em;
+        text-decoration: none;
+        font-size: 0.6em;
+    }
+    
+    footer div {
+        max-width: 5.5em;
+    }
+    
+    footer p {
+        font-size: 0.5em;
+        padding-top: 0.5em;
+    }
+    
+    footer img {
+        width: 6vw;
+        padding-right: 2.5vw;
+    }
+    
+/*====================== Mobile header =====================*/
+
+    header {
+    padding-bottom: 1.5em;
+    }
+    
+    header img.logo {
+        float: left;
+        padding-left: 4vw;
+        width: 20vw;
+        height: auto;
+        position: relative;
+        top: 4vw;
+        padding-bottom: 2vw;
+    }
+    
+    header img.cart {
+        float: right;
+        width: 8vw;
+        height: auto;
+        position: absolute;
+        top: 16vw;
+        right: 4vw;
+    }
+    
+    nav {
+        padding-top: 6vw;
+        float: left;
+    }
+    
+    nav ul {
+        display: inline-block;
+        width: 100vw;
+    }
+    
+    nav ul li{
+        display: block;
+        position: relative;
+        padding: 5vw 0 2vw 4vw;
+        font-size: 1em;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    nav ul li a:active {
+        color: #f0c26a !important;
+    }
+    
+    nav ul li ul {
+        display: block;
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
+    }
+    
+    nav ul li ul li {
+        display: block;
+        padding: 4vw 0 0 8vw;
+    }
+    
+    nav ul li ul li:nth-of-type(1) {
+        padding-left: 7vw;
+    }
+    
+    nav ul li.special:hover {
+        padding-bottom: 2vw;
+    }
+    
+    nav ul li:hover ul {
+        height: auto;
+        background: none;
+    }
+    
+    nav ul li ul li img {
+        display: none;
+    }
+    
+    nav ul li ul li a p {
+        font-size: .75em;
+        padding-top: 0;
+    }
+    
+/*====================== Mobile About =====================*/
+
+h1 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.5em;
+}
+
+.about figure {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    margin: 0vh 0vw 10vh 0vw;
+}
+
+.about .first-img img {
+    width: 100vw;
+    height: auto;
+    padding: 0 0 1vw 0;
+}
+
+.about .second-img img {
+    width: 100vw;
+    height: auto;
+    padding: 0 0 1vw 0;
+}
+
+.about .third-img img {
+    width: 100vw;
+    height: auto;
+    padding: 0 0 2.5vw 0;
+}
+
+.about .fourth-img img {
+    width: 100vw;
+    height: auto;
+    padding: 0 0 2.5vw 0;
+}
+
+.about .first-caption {
+    padding-left: 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .first-caption h4 {
+    max-width: 31em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .second-caption {
+    padding-left: 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .second-caption h4 {
+    max-width: 31em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .third-caption {
+    position: relative;
+    padding: 0 0 0 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .third-caption h4 {
+    max-width: 31em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+.about .fourth-caption {
+    position: relative;
+    padding: 0 0 0 5vw;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.about .fourth-caption h4 {
+    max-width: 31em;
+    padding-top: 0.6em;
+    line-height: 1.5em;
+}
+
+/*====================== Mobile Home =====================*/
+    body.home h1,
+    body.home h2,
+    body.home h3 {
+        color: white;
+    }
+    
+    body.home h4,
+    body.home h5 {
+        color: black;
+    }
+    
+    body.home h4 {
+    font-size: .75em;
+    }
+
+    body.home main section {
+    margin: 0 auto;
+    }
+    
+    body.home figure.item {
+        padding-bottom: 12vw;
+    }
+    
+    body.home figure.tall {
+        padding-bottom: 12vw;
+    }
+
+    body.home figure.large {
+        position: static;
+        padding-bottom: 0;
+    }
+    
+    body.home figure.small {
+    padding-left: 0;
+    float: none;
+    padding-bottom: 12vw;
+    }
+    
+    body.home figure:nth-of-type(7) {
+    padding-left: 0;
+    }
+
+    body.home figure {
+    position: static;
+    display: block;
+    vertical-align: top;
+    float: none;
+    }
+    
+    body.home figure.tall .imageholder {
+        width: 100vw;
+        height: 179.6428571428vw;
+    }
+    
+    body.home figure.small .imageholder {
+        width: 100vw;
+        height: 79.61904762vw;
+    }
+    
+    body.home figure.twothird .imageholder {
+        width: 100vw;
+        height: 46.8438538vw;
+    }
+
+    body.home figure.large h1{
+        font-size: 1.1em;
+        padding: 2vw 0;
+    }
+    
+    body.home figure.twothird h1 {
+        font-size: 1.25em;
+        padding-bottom: 2.5vw;
+    }
+    
+    body.home figure.large h2,
+    body.home figure.twothird h2{
+        font-size: .9em;
+    }
+    
+    body.home figure.large h3,
+    body.home figure.twothird h3{
+        font-size: .7em;
+    }
+
+    body.home figcaption.item h2 {
+        padding: 3vw 0;
+    }
+    
+
+    body.home figure.large h3,
+    figure.twothird h3 {
+        color: black;
+    }
+
+    body.home figcaption.item {
+        position: relative;
+        padding-left: 4vw;
+        margin-top: -19vw;
+    }
+
+    body.home figcaption.large {
+        position: relative;
+        padding-left: 4vw;
+        bottom: 15vw;
+    }
+
+    body.home figcaption.event {
+        padding: 1vw 0 0 4vw;
+    }
+
+    body.home figure.twothird figcaption {
+        bottom: 2vw;
+        padding-bottom: 10vw;
+    }
+
+
+    body.home figure img {
+    width: 100vw;
+    height: auto;
+    }
+    body.home figure.large img {
+        width: 100vw;
+        height: auto;
+    }
+    
+    body.home figure.twothird img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+/*====================== Mobile - Product details =====================*/
+  .prodetails {
+        width: 100vw;
+    }
+    
+    
+    .prodetails nav {
+        display: none;
+    }
+    
+    .prodetails main section{
+        display: block;
+        width:100%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    
+     .prodetails main section p:nth-of-type(1){
+         float: left;
+         width: 30%;
+         margin-left: 5%;
+         font-size: 7vw;
+         color: #f0c26a;
+         margin-top: 2.5%;
+     }
+    
+     .prodetails main section p:nth-of-type(2){
+         float: left;
+         width: 25%;
+         margin-right: 15%;
+         font-size: 10vw;
+         color: #95989A ;
+     }
+    
+    .prodetails main figure:nth-of-type(1) {
+        width: 100%;
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-top: 5%;
+       
+    }
+    
+    .prodetails main figure:nth-of-type(1) img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption h1 {
+        padding-top: 3%;
+        margin-left: 5%;
+    }
+    
+    .prodetails main figure:nth-of-type(1) figcaption h4 {
+        line-height:1.5em;
+        padding-top: 2%;
+        margin-left: 5%;
+        margin-right: 2%;
+        font-size: 4vw;
+        margin-bottom: 5%;
+    }
+     .prodetails main figure:nth-of-type(1) figcaption h2 {
+         margin-left: 5%;
+     }
+    
+    
+    .prodetails main figure:nth-of-type(1) aside {
+        width: 100%;
+        position: relative;
+        top: 5vw;
+        font-size: 0.7em;
+    
+    }
+    
+    .prodetails main figure:nth-of-type(1) aside p:nth-of-type(1) {
+        margin-left: 5%;
+    }
+
+    
+    .prodetails main figure:nth-of-type(1) aside a p {
+        font-size: 6vw;
+        margin-top: 1em;
+        width: 90%;
+        margin-left: 5%;
+        
+    }
+    
+    
+    .prodetails main figure:nth-of-type(2) {
+        width: 100%;
+        margin-top: 15%;
+    }
+   
+   
+    .prodetails main figure:nth-of-type(2) img {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+    
+    .prodetails main figure:nth-of-type(2) figcaption {
+        width: 85%;
+        float: none;
+        margin-top: 5%;
+        margin-left: 5%;
+        line-height: .8em;
+        font-size: 8vw;
+    }
+    
+    
+    .prodetails main figure:nth-of-type(3) {
+        width: 100%;
+    }
+    
+    .prodetails main figure:nth-of-type(3) figcaption {
+        width: 85%;
+        float:none;
+        margin-top: 0;
+        margin-left: 5%;
+        line-height: .8em;
+        font-size: 8vw;
+        margin-bottom: 25%;
+    }
+    
+    .prodetails main figure:nth-of-type(3) img {
+        width: 100%;
+        float: none;
+        margin-top: 15%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    
+    
+    
+    
+ /*====================== Mobile - Cart =====================*/
+ 
+ 
+    .scart nav{
+        display: none;
+    }
+    
+    .scart main aside{
+        display: block;
+        margin-left: 5%;
+        padding-bottom: 5%;
+        padding-top: 10%;
+        font-size: 10vw;
+        color: #95989A;
+    }
+    
+    .scart main figure:nth-of-type(1) {
+        width: 100%;
+        position: relative;
+        margin-top: 5%;
+        
+    }
+    
+     .scart main figure:nth-of-type(1) img {
+        width: 100%;
+    }
+    
+ 
+    
+    .scart main figure:nth-of-type(1) figcaption {
+        position: absolute;
+        left: 62%;
+        font-size: 0.5em;
+        width: 30%;
+        color: lightgrey;
+    
+    }
+    
+    
+    
+    .scart main figure:nth-of-type(2) {
+        width: 100%;
+    }
+    
+    .scart main figure:nth-of-type(2) img {
+        width: 100%;
+    }
+    
+    .scart main figure:nth-of-type(2) figcaption {
+       
+        left: 62%;
+        font-size: 0.5em;
+        width: 30%;
+    }
+ 
+     .scart main div {
+        margin-left: 0;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        width: 100%;
+        line-height: 1em;
+    }
+    
+    .scart main div h2 {
+    font-size: 0.6em;
+    padding-left: 62%;
+    }
+    
+    .scart main div h3 {
+        font-size: 6vw;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 25%;
+    }
+ 
+    
+
+
+/* ================ mobile pens page ================ */ 
+
+ .pens header nav {
+        float: none;
+        display: none;
+        width: 100vw;
+}
+   
+     .pens header nav ul li.special:hover {
+    /*padding-bottom: 0;*/
+    display: none;
+}
+
+    .pens header nav ul li:hover ul {
+    /*height: 0;*/
+    /*background: none;*/
+    display: none;
+}
+    
+    .pens{
+        width: 100%;
+        height: auto;
+    }
+ 
+  .pens section {
+        width: 50%;
+        position: absolute;
+        margin-left: 10%;
+        line-height: 50em;
+        color: #95989A;
+        display: none;
+    }
+    
+    
+    .pens main section h2:nth-of-type(1){
+        display: none;
+        
+    }
+    
+    .pens main section h2:nth-of-type(2){
+        display: none;
+        
+    }
+    
+    .pens section h2:nth-of-type(3){
+        display: none;
+        
+    }
+    
+    
+    .pens main section h2:nth-of-type(4){
+        display: none;
+        
+    }
+    
+     .pens main section h2:nth-of-type(5){
+        display: none;
+    }
+    
+    .pens main aside {
+        display: block;
+        margin-left: 5%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        font-size: 10vw;
+        /*color: #95989A;*/
+        color: #f0c26a;
+    }
+    
+    .pens main figure:nth-of-type(1){
+        position: relative;
+        margin-right: 0;
+    }
+    
+    .pens main figure:nth-of-type(1) img{
+        width: 100vw;
+        float: none;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+    
+    .pens main figure:nth-of-type(1) .imageholder {
+        width: 100vw;
+        height: 75.51175vw;
+    }
+    
+   .pens main figure:nth-of-type(1) figcaption{
+        position: relative;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+        bottom: 4vw;
+        left: 0vw;
+        font-size: 7.8vw;
+      
+       
+    }
+    
+    .pens main figure:nth-of-type(2){
+        float: none;
+        position: relative;
+        margin-left: 0;
+       
+    }
+    
+    .pens main figure:nth-of-type(2) img{
+        width: 100vw;
+        margin-left: 0%; 
+    
+    }
+    
+    .pens main figure:nth-of-type(2) .imageholder {
+        width: 100vw;
+        height: 46.6517vw;
+    }
+    
+    .pens main figure:nth-of-type(2) figcaption{
+        position: relative;
+        margin-top: 5%; 
+        margin-left: 5%;
+        margin-bottom: 19%;
+        z-index: 10;
+     }
+    
+    
+    .pens main figure:nth-of-type(3){
+        float: none;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    
+     
+    .pens main figure:nth-of-type(3) img{
+        width: 100vw;
+    
+    }
+    
+    .pens main figure:nth-of-type(3) .imageholder {
+        width: 100vw;
+        height: 195.118549vw;
+    }
+    
+    .pens main figure:nth-of-type(3) figcaption{
+         position: relative;
+         margin-top: 5%;
+         margin-bottom: 19%;
+         margin-left: 5%;
+       
+    }
+    
+    .pens main figure:nth-of-type(4){
+        position: relative;
+        margin-left: 0;
+        float: none;
+    }
+    
+     .pens main figure:nth-of-type(4) img{
+       width: 100vw;
+       margin-left: 0;
+      
+     }
+    
+    .pens main figure:nth-of-type(4) .imageholder {
+        width: 100vw;
+        height: 91.74107vw;
+    }
+    
+     .pens main figure:nth-of-type(4) figcaption{
+        position: relative;
+        margin-top: 0; 
+        margin-left: 5%;
+        margin-bottom: 25%;
+    }
+ 
+ /*================ Mobile fountainpens page================*/
+ 
+  
+  .fountainpens header nav {
+        float: none;
+        display: none;
+        width: 100vw;
+        background: #fcf;
+}
+   
+     .fountainpens header nav ul li.special:hover {
+    /*padding-bottom: 0;*/
+    display: none;
+}
+
+    .fountainpens header nav ul li:hover ul {
+    /*height: 0;*/
+    /*background: none;*/
+    display: none;
+}
+ 
+
+
+  /*.fountainpens {*/
+        /*width: 100%;*/
+  /*      height: auto;*/
+  /*      background: #fcf;*/
+  /*  }*/
+
+    .fountainpens section {
+        display: none;
+        /*width: 15%;*/
+        /*position: absolute;*/
+        /*margin-left: 10%;*/
+        /*line-height: 3em;*/
+        /*color: #95989A;*/
+    }
+    
+    .fountainpens section h2:nth-of-type(3) {
+        /*color: #F0C26A;*/
+        display: none;
+    }
+    
+    .fountainpens main section h3 {
+        display: none;
+        /*padding-left: 15%;*/
+        /*color: #F0C26A;*/
+        /*font-weight: 200;*/
+    }
+    
+    .fountainpens main aside {
+        display: block;
+        width:100%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        
+    }
+    
+    .fountainpens main aside p:nth-of-type(1){
+         float: left;
+         width: 22%;
+         margin-left: 5%;
+         font-size: 7vw;
+         color: #f0c26a;
+         margin-top: 2.5%;
+     }
+    
+     .fountainpens main aside p:nth-of-type(2){
+         float: left;
+         width: 25%;
+         margin-right: 25%;
+         font-size: 10vw;
+         color: #95989A;
+         /*color: #f0c26a;*/
+     }
+
+    
+    .fountainpens main figure:nth-of-type(1){
+        position: relative;
+        margin-right: 0;
+    }
+    
+    .fountainpens main figure:nth-of-type(1) img{
+        width: 100vw;
+        float: none;
+        /*padding-bottom: 5%;*/
+    }
+    
+    .fountainpens main figure:nth-of-type(1) .imageholder {
+        width: 100vw;
+        height: 75.5117vw;
+    }
+    
+    
+   .fountainpens main figure:nth-of-type(1) figcaption{
+        position: relative;
+        top: 85%;
+        left: 5%;
+        padding-top: 4%;
+        color: black;
+        width: 95%;
+    }
+    
+    .fountainpens main figure:nth-of-type(1) figcaption h2{
+        padding-bottom: 2%;
+    }
+
+    .fountainpens main figure:nth-of-type(2){
+        float: none;
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 8%;
+        
+    }
+    
+    
+    .fountainpens main figure:nth-of-type(2) img{
+        width: 100vw;
+        margin-left: 0; 
+    }
+    
+    .fountainpens main figure:nth-of-type(2) .imageholder {
+        width: 100vw;
+        height: 89.3193vw;
+    }
+    
+    .fountainpens main figure:nth-of-type(2) figcaption{
+        position:relative;
+        margin-top: 5%; 
+        margin-left: 5%;
+        z-index: 0;
+        margin-bottom: 15%;
+       
+     }
+     
+     .fountainpens main figure:nth-of-type(2) figcaption h3{
+        padding-bottom: 2%;
+    }
+     
+     .fountainpens main figure:nth-of-type(3){
+        position: relative;
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+    
+     
+    .fountainpens main figure:nth-of-type(3) img{
+        width: 100vw;
+        margin-top: 30vw;
+    }
+    
+    .fountainpens main figure:nth-of-type(3) .imageholder {
+        width: 100vw;
+        height: 220vw;
+        background: #a8dedc;
+    }
+    
+    .fountainpens main figure:nth-of-type(3) figcaption{
+        position: absolute;
+        bottom: -23%;
+        left: 0;
+        margin-left: 5%;
+    }
+    
+    .fountainpens main figure:nth-of-type(3) figcaption h3{
+        padding-bottom: 2%;
+    }
+    
+    .fountainpens main figure:nth-of-type(4){
+       width: 100%;
+       margin-right: 0;
+       margin-top: 50vw;
+     
+       float: none;
+    }
+    
+    .fountainpens main figure:nth-of-type(4) img{
+       width: 100%;
+       margin-left: 0; 
+     }
+     
+     .fountainpens main figure:nth-of-type(4) .imageholder {
+        width: 100vw;
+        height: 54.03141vw;
+    }
+
+    
+ .fountainpens main figure:nth-of-type(4) figcaption{
+    position: relative;
+    margin-top: 5%; 
+    margin-left: 5%;
+    margin-bottom: 25%;
+ }
+ 
+  .fountainpens main figure:nth-of-type(4) figcaption h3{
+        padding-bottom: 2%;
+    }
+
+ 
+ /*==================== Mobile Events ======================*/
+
+    body.events h1,
+    body.events h4 {
+        color: black !important;
+    }
+    
+    body.events main {
+        margin: 0;
+    }
+    
+    
+    body.events figure.small {
+        padding-bottom: 10vw;
+    }
+    
+    body.events figure.small img {
+        width: 100vw;
+        height: auto;
+        float: none;
+        padding-bottom: 3vw;
+    }
+    
+    body.events figure.large img {
+        width: 100vw;
+        height: auto;
+    }
+    
+    body.events figure.large figcaption {
+        padding: 2vw 0 0 5vw;
+        max-width: 90vw;
+    }
+    
+    body.events figure.large figcaption h4 {
+        padding: 2vw 0 0 0;
+        line-height: 1.3em;
+    }
+    
+    body.events figure.small figcaption {
+        padding: 2vw 0 0 5vw;
+        float: none;
+        max-width: 90%;
+    }
+    
+    body.events figure.small figcaption h4 {
+        padding-top: 2vw;
+        line-height: 1.3em;
+        
+    }
+    
+    body.events main h2 {
+        padding: 6vw 0 0 5vw;
+        color: #f0c26a;
+    }
+    
+    body.events div {
+    }
+    
+    body.events h1,
+    body.events h2,
+    body.events h4 {
+        color: grey;
+    }
+    
+    body.events #plus {
+        width: 1.5em;
+        height: 1.5em;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.1) !important;
+        display: block;
+        position: relative;
+        bottom: 7.8vw;
+        left: 45vw;
+        color: #f0c26a;
+        text-decoration: none;
+        line-height: 1.4em;
+        text-align: center;
+    }
+
+
+}
+
